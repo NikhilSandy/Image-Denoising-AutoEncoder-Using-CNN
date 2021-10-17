@@ -36,9 +36,6 @@ We are going to work on MNIST DATASET it consists of handwritten digits(0-9) 60,
 
 # Activation Functions:
 ReLU is used in conv layers to learn non linearities in data and last layer is activated with sigmoid t scale the values to lie between (0,1)
-# Loss Function and Opitimizer:
-MSE loss is used to calculate the reconstruction error.
-Adam optimization technique is used to optimize loss and for updating parameters
 # Hyper Parameters 
 
 | Hyper Perameter | Values |
@@ -46,9 +43,12 @@ Adam optimization technique is used to optimize loss and for updating parameters
 | Learning Rate   | 0.001  |
 | Batch Size      | 64     |
 | Epochs          | 10     |
+|Loss Function    |MSE Loss|
+|Optimiser        |Adam    |
 | Beta1           | 0.9    |
 | Beta2           | 0.999  |
 | Weight Deacy    | 1e-5   |
+
 # Noises Added:
 In this we have added gausian noises using torch.randn().We can mask some values of inputs randomly using mask function in code and we can add some other noises.
 # Training
